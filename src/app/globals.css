@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lisu+Bosa:wght@200&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ysabeau+Office:ital,wght@1,200&display=swap");
 
 :root {
   --background: #ffffff;
@@ -18,4 +19,95 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.spectral-extralight {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-light {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-extrabold {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-extralight-italic {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-light-italic {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-regular-italic {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-medium-italic {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-semibold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-bold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-extrabold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.mulish-extralight {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
