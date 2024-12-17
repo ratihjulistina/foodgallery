@@ -1,29 +1,25 @@
 "use client";
 
 import { useState, useEffect } from "react"; //berarti dalam react file ada banyak export function pakai kurung kurawal
-import {
-  IContentfulAsset,
-  TypeBlogPostFields,
-  TypeBlogPostSkeleton,
-} from "@/contentful/types/blogPost.types";
+import { IContentfulAsset } from "@/contentful/types/blogPost.types";
 import contentfulClient from "@/contentful/contentfulClient"; //cuma ada 1 function yg di export default
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import RichText from "@/components/global/RichText";
 import Navbar from "@/components/layout/Navbar";
-import { Mulish, Playfair, Lato, Poppins } from "next/font/google";
+import { Lato, Poppins } from "next/font/google";
 
-const mulish = Mulish({
-  subsets: ["latin"],
-  variable: "--font-mulish",
-  weight: ["400", "700"],
-});
+// const mulish = Mulish({
+//   subsets: ["latin"],
+//   variable: "--font-mulish",
+//   weight: ["400", "700"],
+// });
 
-const playfair = Playfair({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["900"],
-});
+// const playfair = Playfair({
+//   subsets: ["latin"],
+//   variable: "--font-playfair",
+//   weight: ["900"],
+// });
 
 const lato = Lato({
   subsets: ["latin"],
