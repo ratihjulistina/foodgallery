@@ -1,5 +1,5 @@
 import React from "react";
-import { Lato, Montserrat, Mulish, Playfair, Poppins } from "next/font/google";
+import { Lato, Montserrat, Mulish, Playfair } from "next/font/google";
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -13,11 +13,11 @@ const playfair = Playfair({
   weight: ["900"],
 });
 
-const lato = Lato({
-  subsets: ["latin"],
-  variable: "--font-Lato",
-  weight: ["400"],
-});
+// const lato = Lato({
+//   subsets: ["latin"],
+//   variable: "--font-Lato",
+//   weight: ["400"],
+// });
 
 const montserrat = Montserrat({
   subsets: ["latin"],

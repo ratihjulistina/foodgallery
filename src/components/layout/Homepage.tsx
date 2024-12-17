@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mulish, Playfair, Lato, Montserrat, Poppins } from "next/font/google";
+import { Mulish, Playfair, Lato, Poppins } from "next/font/google";
 import Subscription from "../menu/elements/Subscription";
 
 const mulish = Mulish({

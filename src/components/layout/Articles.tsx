@@ -1,5 +1,4 @@
 import React from "react";
-import { CardBlog } from "../menu/elements/CardBlog";
 import { LatestPost } from "../menu/elements/LatestPost";
 
 export function Articles() {

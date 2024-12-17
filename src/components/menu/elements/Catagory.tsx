@@ -1,8 +1,4 @@
-import contentfulClient from "@/contentful/contentfulClient";
-import {
-  TypeBlogPostSkeleton,
-  IContentfulAsset,
-} from "@/contentful/types/blogPost.types";
+import { IContentfulAsset } from "@/contentful/types/blogPost.types";
 import Image from "next/image";
 import Link from "next/link";
 import { Mulish, Playfair, Lato, Poppins } from "next/font/google";

@@ -1,7 +1,7 @@
 "use client";
 import About from "@/components/layout/About";
-import { Articles, BlogPost } from "@/components/layout/Articles";
-import { Catagories, CatagoriesPage } from "@/components/layout/Catagories";
+import { Articles } from "@/components/layout/Articles";
+import { Catagories } from "@/components/layout/Catagories";
 import { Homepage } from "@/components/layout/Homepage";
 // import About from "@/components/layout/About";
 // import Hero from "@/components/layout/Hero";

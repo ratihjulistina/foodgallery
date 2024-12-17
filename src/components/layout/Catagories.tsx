@@ -1,6 +1,4 @@
 import React from "react";
-import { CardBlog } from "../menu/elements/CardBlog";
-import { LatestPost } from "../menu/elements/LatestPost";
 import { Catagory } from "../menu/elements/Catagory";
 
 export function Catagories() {
