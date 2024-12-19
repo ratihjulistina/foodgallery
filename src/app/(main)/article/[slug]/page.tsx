@@ -35,6 +35,7 @@ const poppins = Poppins({
 export default function Article() {
   //fitur next bisa langsung akses slug dari params
   const params = useParams<{ slug: string }>();
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   const [article, setArticle] = useState<any>();
 
   const fetchArticles = async () => {
@@ -67,19 +68,21 @@ export default function Article() {
               {article?.title}
             </div>
           </div>
-          <div className="w-[87.4%] m-auto">
-            <div className="relative h-[400px] w-[70%] bg-pink-600 mx-auto mb-10 ">
-              <Image
-                src={`https:${
-                  (article?.image as IContentfulAsset)?.fields.file.url
-                }`}
-                fill
-                style={{ objectFit: "cover" }}
-                alt="article-image"
-              />
-            </div>
-            <div className={`text-0.5xl ${poppins.variable} font-secondary`}>
-              <RichText document={article?.body} />
+          <div className="w-100% bg-white">
+            <div className="w-[87.4%] m-auto">
+              <div className="relative h-[400px] w-[70%] mx-auto mb-10 ">
+                <Image
+                  src={`https:${
+                    (article?.image as IContentfulAsset)?.fields.file.url
+                  }`}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="article-image"
+                />
+              </div>
+              <div className={`text-0.5xl ${poppins.variable} font-secondary`}>
+                <RichText document={article?.body} />
+              </div>
             </div>
           </div>
         </div>
