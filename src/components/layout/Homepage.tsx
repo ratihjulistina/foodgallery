@@ -29,12 +29,12 @@ export async function Homepage() {
   //pakai async itu karna mau ngambil data di API, berarti itu promis jadi nunggu dlu, data ada di software lain nih.
 
   return (
-    <div className="w-[87.4%] min-h-max mx-auto ">
+    <div className="w-[87.4%] min-h-max mx-auto bg-white ">
       <div
         id="Hero"
         className="w-[100%] min-h-max flex flex-row justify-between items-center bg-[rgb(160,135,111)] opacity-0.4"
       >
-        <div className="w-[40%] h-full flex flex-col m-auto ">
+        <div className="w-[40%] h-full flex flex-col m-auto pl-4 pr-1">
           <h1 className={`${playfair.variable} font-serif text-5xl`}>
             Plan your daily meal!
           </h1>

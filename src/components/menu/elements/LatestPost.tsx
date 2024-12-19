@@ -30,16 +30,20 @@ const poppins = Poppins({
 export async function LatestPost() {
   //pakai async itu karna mau ngambil data di API, berarti itu promis jadi nunggu dlu, data ada di software lain nih.
   const posts = await getBlogPostsContentful();
+  const category = "blogPost";
+  const filteredData = posts?.items.filter(
+    (post) => post.sys.contentType.sys.id === category
+  );
   return (
-    <div className="w-[87.4%] mx-auto ">
+    <div className="w-[100%] mx-auto ">
       <div
         className={`${playfair.variable} font-serif text-5xl text-[rgb(150,95,52)] pt-10 text-left pb-3`}
       >
         Latest Recipes
       </div>
       <div className=" w-[100%] pb-10 mx-auto  desktop:grid grid-rows-2 grid-cols-3 gap-5 ">
-        {posts &&
-          posts.items?.slice(0, 6).map((blog, idx) => (
+        {filteredData &&
+          filteredData.slice(0, 6).map((blog, idx) => (
             <div
               key={idx}
               className=" shadow-md border h-[100vh] border-gray-200 max-w-sm p-5   "
