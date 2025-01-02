@@ -27,9 +27,7 @@ export async function Homepage() {
           <h1 className={`${playfair.variable} font-serif text-5xl`}>
             Plan your daily meal!
           </h1>
-          <h2
-            className={`${mulish.variable} font-sans font-medium w-full text-right px-5`}
-          >
+          <h2 className={`${mulish.variable} font-sans font-medium`}>
             Simply your life
           </h2>
         </div>
