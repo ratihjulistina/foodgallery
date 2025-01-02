@@ -23,12 +23,12 @@ export async function Homepage() {
         id="Home"
         className="w-[100%] min-h-max flex flex-row justify-between items-center bg-[rgb(160,135,111)] opacity-0.4"
       >
-        <div className="w-[40%] h-full flex flex-col m-auto pl-4 pr-1">
+        <div className="w-[40%] h-full flex flex-col justify-center items-center m-auto">
           <h1 className={`${playfair.variable} font-serif text-5xl`}>
             Plan your daily meal!
           </h1>
           <h2
-            className={`${mulish.variable} font-sans font-medium text-right pr-10`}
+            className={`${mulish.variable} font-sans font-medium w-full text-right px-5`}
           >
             Simply your life
           </h2>

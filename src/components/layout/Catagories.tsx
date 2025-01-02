@@ -5,7 +5,7 @@ export function Catagories() {
   return (
     <div
       id="Catagories"
-      className="py-5 flex flex-col justify-between items-center "
+      className="py-5 flex flex-col justify-between items-center max-h-max "
     >
       <Catagory filterKey="Breakfast" />
       <Catagory filterKey="Snacks" />

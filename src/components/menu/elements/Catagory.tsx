@@ -32,20 +32,20 @@ export async function Catagory({ filterKey }: { filterKey: string }) {
   const posts = await getBlogPostsContentful();
 
   return (
-    <div className="w-[87.4%] mx-auto bg-[rgb(160,135,111)] opacity-0.4 max-h-[120vh] ">
+    <div className="w-[87.4%] mx-auto bg-[rgb(160,135,111)] opacity-0.4 h-1/3 ">
       <div
         className={`${playfair.variable} font-serif text-5xl text-black pt-10 text-center py-5 `}
       >
         {filterKey}
       </div>
-      <div className=" w-[90%] pb-10 mx-auto  desktop:grid grid-rows-2 grid-cols-3 gap-5 ">
+      <div className=" w-[90%] h-full pb-10 mx-auto  desktop:grid grid-rows-1 grid-cols-3 gap-5 ">
         {posts &&
           posts.items
             ?.filter((post) => post.fields.catagory === filterKey)
             .map((blog, idx) => (
               <div
                 key={idx}
-                className="flex flex-col justify-between shadow-md max-h-[550px] max-w-1/3 bg-white  "
+                className="flex flex-col justify-between shadow-md max-h-[550px] max-w-1/3 bg-white gap-2 "
               >
                 <div className="h-[40%] w-full">
                   {" "}
@@ -60,9 +60,9 @@ export async function Catagory({ filterKey }: { filterKey: string }) {
                   />
                 </div>
 
-                <div className=" w-[90%] h-[40%] flex flex-col justify-between items-start mx-auto">
+                <div className=" w-[90%] h-[40%] flex flex-col justify-between items-start mx-auto ">
                   <div
-                    className={`${lato.variable} font-serifs text-2xl tracking-tigh font-extrabold pt-2`}
+                    className={`${lato.variable} font-serifs text-2xl tracking-tigh font-extrabold`}
                   >
                     {blog.fields.title}
                   </div>
@@ -77,7 +77,7 @@ export async function Catagory({ filterKey }: { filterKey: string }) {
                     kids, and adults alike!
                   </div>
                 </div>
-                <div className="w-[90%] mb-3 m-auto pl-4">
+                <div className="w-[90%] my-3 m-auto">
                   <Link href={`article/${blog.fields.slug}`}>
                     <div
                       className={`${mulish.variable} font-sans text-black bg-[rgb(159,135,111)] font-semibold hover:bg-[rgb(150,95,52)] focus:ring-4 focus:ring-black  rounded-lg text-sm px-3 py-2 text-center inline-flex items-center`}
