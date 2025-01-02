@@ -46,7 +46,7 @@ export async function LatestPost() {
           filteredData.slice(0, 6).map((blog, idx) => (
             <div
               key={idx}
-              className="flex flex-col justify-between shadow-md border border-gray-200 max-w-sm max-h-[600px] gap-0 p-5"
+              className="flex flex-col justify-between shadow-md border border-gray-200 max-h-[600px] max-w-1/3 gap-0 p-5"
             >
               <div className="w-full h-[40%]">
                 <Image

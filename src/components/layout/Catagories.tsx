@@ -3,7 +3,10 @@ import { Catagory } from "../menu/elements/Catagory";
 
 export function Catagories() {
   return (
-    <div id="Catagories" className="py-5">
+    <div
+      id="Catagories"
+      className="py-5 flex flex-col justify-between items-center "
+    >
       <Catagory filterKey="Breakfast" />
       <Catagory filterKey="Snacks" />
       <Catagory filterKey="Family Dinner" />

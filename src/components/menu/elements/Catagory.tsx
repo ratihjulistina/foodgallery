@@ -32,7 +32,7 @@ export async function Catagory({ filterKey }: { filterKey: string }) {
   const posts = await getBlogPostsContentful();
 
   return (
-    <div className="w-[87.4%] mx-auto bg-[rgb(160,135,111)] opacity-0.4 h-[130vh] ">
+    <div className="w-[87.4%] mx-auto bg-[rgb(160,135,111)] opacity-0.4 max-h-[120vh] ">
       <div
         className={`${playfair.variable} font-serif text-5xl text-black pt-10 text-center py-5 `}
       >
@@ -45,7 +45,7 @@ export async function Catagory({ filterKey }: { filterKey: string }) {
             .map((blog, idx) => (
               <div
                 key={idx}
-                className="flex flex-col justify-between shadow-md max-h-[550px] max-w-sm bg-white  "
+                className="flex flex-col justify-between shadow-md max-h-[550px] max-w-1/3 bg-white  "
               >
                 <div className="h-[40%] w-full">
                   {" "}
@@ -62,7 +62,7 @@ export async function Catagory({ filterKey }: { filterKey: string }) {
 
                 <div className=" w-[90%] h-[40%] flex flex-col justify-between items-start mx-auto">
                   <div
-                    className={`${lato.variable} font-serifs text-2xl tracking-tigh font-extrabold`}
+                    className={`${lato.variable} font-serifs text-2xl tracking-tigh font-extrabold pt-2`}
                   >
                     {blog.fields.title}
                   </div>
