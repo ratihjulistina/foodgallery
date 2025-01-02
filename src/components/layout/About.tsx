@@ -15,20 +15,9 @@ const playfair = Playfair({
   weight: ["900"],
 });
 
-const lato = Lato({
-  subsets: ["latin"],
-  variable: "--font-Lato",
-  weight: ["900"],
-});
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-Poppins",
-  weight: ["400"],
-});
-
 const About = () => {
   return (
-    <div className="w-full  bg-[rgb(160,135,111)] opacity-0.4 m-auto">
+    <div className="w-full  bg-[rgb(160,135,111)] opacity-0.4 m-auto py-5">
       <div className="w-[87.4%] min-h-max m-auto" id="About">
         <div
           className={`${playfair.variable} font-serif text-5xl text-black py-10`}

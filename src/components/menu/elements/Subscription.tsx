@@ -1,5 +1,5 @@
 import React from "react";
-import { Lato, Montserrat, Mulish, Playfair } from "next/font/google";
+import { Montserrat, Mulish, Playfair } from "next/font/google";
 
 const mulish = Mulish({
   subsets: ["latin"],

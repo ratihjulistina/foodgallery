@@ -1,3 +1,4 @@
+"use client";
 import { GlobalStateContext } from "@/context/GlobalStateContext";
 import { useContext } from "react";
 import { Mulish } from "next/font/google";
