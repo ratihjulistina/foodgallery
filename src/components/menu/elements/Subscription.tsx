@@ -27,12 +27,12 @@ const montserrat = Montserrat({
 
 function Subscription() {
   return (
-    <section className=" dark:bg-white border border-white shadow-lg">
+    <section className=" dark:bg-white border border-gray-300 shadow-lg">
       <div className="py-8 px-4 mx-auto max-w-screen-xl">
-        <div className="mx-auto max-w-screen-md flex flex-row justify-between items-center mobile:text-center ">
+        <div className="mx-auto max-w-screen-md flex flex-row justify-between items-center gap-5">
           <div className="w-[40%]">
             <h2
-              className={`${playfair.variable} font-serif mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-white`}
+              className={`${playfair.variable} font-serif mb-4 text-3xl font-medium text-gray-900 mobile:text-2xl dark:text-white`}
             >
               Sign up for our new recipes every week!
             </h2>

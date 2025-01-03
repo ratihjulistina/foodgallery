@@ -24,10 +24,14 @@ export function Homepage() {
         className="w-[100%] min-h-max flex flex-row justify-between items-center bg-[rgb(160,135,111)] opacity-0.4"
       >
         <div className="w-[40%] h-full flex flex-col justify-center items-center m-auto">
-          <h1 className={`${playfair.variable} font-serif text-5xl`}>
+          <h1
+            className={`${playfair.variable} font-serif text-5xl text-center`}
+          >
             Plan your daily meal!
           </h1>
-          <h2 className={`${mulish.variable} font-sans font-medium`}>
+          <h2
+            className={`${mulish.variable} font-sans font-medium text-center`}
+          >
             Simply your life
           </h2>
         </div>
