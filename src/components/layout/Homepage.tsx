@@ -14,7 +14,7 @@ const playfair = Playfair({
   weight: ["900"],
 });
 
-export async function Homepage() {
+export function Homepage() {
   //pakai async itu karna mau ngambil data di API, berarti itu promis jadi nunggu dlu, data ada di software lain nih.
 
   return (

@@ -26,7 +26,7 @@ const montserrat = Montserrat({
 });
 
 function Subscription() {
-  return -(
+  return (
     <section className=" dark:bg-white border border-white shadow-lg">
       <div className="py-8 px-4 mx-auto max-w-screen-xl">
         <div className="mx-auto max-w-screen-md flex flex-row justify-between items-center mobile:text-center ">
